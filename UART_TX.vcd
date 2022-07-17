@@ -1,0 +1,917 @@
+$date
+	Sun Jul 17 17:34:38 2022
+$end
+$version
+	ModelSim Version 10.5b
+$end
+$timescale
+	1ps
+$end
+
+$scope module UART_TX_tb $end
+$var reg 1 ! parity_enable_tb $end
+$var reg 1 " Parity_Type_tb $end
+$var reg 1 # clk_tb $end
+$var reg 1 $ rst_tb $end
+$var reg 1 % Data_Valid_tb $end
+$var reg 8 & P_Data_tb [7:0] $end
+$var wire 1 ' busy_tb $end
+$var wire 1 ( TX_OUT_tb $end
+$var reg 4 ) clock_period [3:0] $end
+
+$scope task initialize $end
+$upscope $end
+
+$scope task reset $end
+$upscope $end
+
+$scope task without_parity $end
+$upscope $end
+
+$scope task even_parity $end
+$upscope $end
+
+$scope task odd_parity $end
+$upscope $end
+
+$scope task successive_frames $end
+$upscope $end
+
+$scope module DUT $end
+$var wire 1 * parity_enable $end
+$var wire 1 + Parity_Type $end
+$var wire 1 , clk $end
+$var wire 1 - rst $end
+$var wire 1 . Data_Valid $end
+$var wire 1 / P_Data [7] $end
+$var wire 1 0 P_Data [6] $end
+$var wire 1 1 P_Data [5] $end
+$var wire 1 2 P_Data [4] $end
+$var wire 1 3 P_Data [3] $end
+$var wire 1 4 P_Data [2] $end
+$var wire 1 5 P_Data [1] $end
+$var wire 1 6 P_Data [0] $end
+$var wire 1 ' busy $end
+$var wire 1 ( TX_OUT $end
+$var wire 1 7 serial_done1 $end
+$var wire 1 8 serial_enable1 $end
+$var wire 1 9 serial_data1 $end
+$var wire 1 : mux_sel1 [1] $end
+$var wire 1 ; mux_sel1 [0] $end
+$var wire 1 < parity_bit1 $end
+$var wire 1 = start_bit1 $end
+$var wire 1 > stop_bit1 $end
+
+$scope module serializer1 $end
+$var wire 1 / P_Data [7] $end
+$var wire 1 0 P_Data [6] $end
+$var wire 1 1 P_Data [5] $end
+$var wire 1 2 P_Data [4] $end
+$var wire 1 3 P_Data [3] $end
+$var wire 1 4 P_Data [2] $end
+$var wire 1 5 P_Data [1] $end
+$var wire 1 6 P_Data [0] $end
+$var wire 1 8 serial_enable $end
+$var wire 1 , clk $end
+$var wire 1 - rst $end
+$var reg 1 ? serial_done $end
+$var reg 1 @ serial_data $end
+$var reg 8 A counter [7:0] $end
+$upscope $end
+
+$scope module FSM1 $end
+$var parameter 4 B IDLE_STATE $end
+$var parameter 4 C SOF_STATE $end
+$var parameter 4 D TRANSMITTING_STATE $end
+$var parameter 4 E EOF_NOPARITY_STATE $end
+$var parameter 4 F EOF_WITHPARITY_STATE $end
+$var wire 1 * parity_enable $end
+$var wire 1 . Data_Valid $end
+$var wire 1 7 serial_done $end
+$var wire 1 - rst $end
+$var wire 1 , clk $end
+$var reg 1 G busy $end
+$var reg 1 H serial_enable $end
+$var reg 2 I mux_sel [1:0] $end
+$var reg 4 J current_state [3:0] $end
+$var reg 4 K next_state [3:0] $end
+$upscope $end
+
+$scope module parity_calc1 $end
+$var wire 1 . Data_Valid $end
+$var wire 1 + Parity_Type $end
+$var wire 1 / P_Data [7] $end
+$var wire 1 0 P_Data [6] $end
+$var wire 1 1 P_Data [5] $end
+$var wire 1 2 P_Data [4] $end
+$var wire 1 3 P_Data [3] $end
+$var wire 1 4 P_Data [2] $end
+$var wire 1 5 P_Data [1] $end
+$var wire 1 6 P_Data [0] $end
+$var reg 1 L parity_bit $end
+$upscope $end
+
+$scope module MUX1 $end
+$var parameter 32 M IDLE $end
+$var wire 1 : mux_sel [1] $end
+$var wire 1 ; mux_sel [0] $end
+$var wire 1 = start_bit $end
+$var wire 1 > stop_bit $end
+$var wire 1 9 serial_data $end
+$var wire 1 < parity_bit $end
+$var reg 1 N TX_OUT $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+x!
+x"
+1#
+1$
+x%
+bx &
+b101 )
+0?
+x@
+b0 A
+xG
+xH
+bx I
+bx J
+b0 K
+xL
+1N
+b0 B
+b1 C
+b11 D
+b10 E
+b101 F
+b1 M
+x'
+1(
+07
+x8
+x9
+x;
+x:
+x<
+0=
+1>
+x6
+x5
+x4
+x3
+x2
+x1
+x0
+x/
+x.
+1-
+1,
+x+
+x*
+$end
+#1250
+0$
+0-
+#2500
+0#
+0,
+#5000
+1#
+1,
+b0 J
+0G
+0H
+0'
+08
+#7500
+0#
+0,
+#10000
+1#
+1,
+#11250
+1$
+1-
+#12500
+0#
+0,
+#15000
+1#
+1,
+#16250
+0!
+1%
+b1111 &
+0*
+1.
+16
+15
+14
+13
+02
+01
+00
+0/
+0L
+b1 K
+0<
+#17500
+0#
+0,
+#20000
+1#
+1,
+b1 J
+b11 K
+1G
+1H
+b0 I
+1'
+18
+0;
+0:
+0N
+0(
+#22500
+0#
+0,
+#25000
+1#
+1,
+b1 A
+1@
+b11 J
+19
+b10 I
+1:
+1N
+1(
+#27500
+0#
+0,
+#30000
+1#
+1,
+b10 A
+#32500
+0#
+0,
+#35000
+1#
+1,
+b11 A
+#37500
+0#
+0,
+#40000
+1#
+1,
+b100 A
+#42500
+0#
+0,
+#45000
+1#
+1,
+b101 A
+0@
+09
+0N
+0(
+#47500
+0#
+0,
+#50000
+1#
+1,
+b110 A
+#52500
+0#
+0,
+#55000
+1#
+1,
+b111 A
+#57500
+0#
+0,
+#60000
+1#
+1,
+1?
+b1000 A
+17
+b10 K
+#61250
+0%
+0.
+#62500
+0#
+0,
+#65000
+1#
+1,
+b0 A
+b10 J
+b0 K
+0H
+b1 I
+08
+1;
+0:
+1N
+1(
+#67500
+0#
+0,
+#70000
+1#
+1,
+0?
+b0 J
+07
+0G
+bx I
+0'
+x;
+x:
+#72500
+0#
+0,
+#75000
+1#
+1,
+#76250
+1!
+0"
+1%
+b101 &
+1*
+0+
+1.
+05
+03
+b1 K
+#77500
+0#
+0,
+#80000
+1#
+1,
+b1 J
+b11 K
+1G
+1H
+b0 I
+1'
+18
+0;
+0:
+0N
+0(
+#82500
+0#
+0,
+#85000
+1#
+1,
+b1 A
+1@
+b11 J
+19
+b10 I
+1:
+1N
+1(
+#87500
+0#
+0,
+#90000
+1#
+1,
+b10 A
+0@
+09
+0N
+0(
+#92500
+0#
+0,
+#95000
+1#
+1,
+b11 A
+1@
+19
+1N
+1(
+#97500
+0#
+0,
+#100000
+1#
+1,
+b100 A
+0@
+09
+0N
+0(
+#102500
+0#
+0,
+#105000
+1#
+1,
+b101 A
+#107500
+0#
+0,
+#110000
+1#
+1,
+b110 A
+#112500
+0#
+0,
+#115000
+1#
+1,
+b111 A
+#117500
+0#
+0,
+#120000
+1#
+1,
+1?
+b1000 A
+17
+b101 K
+#121250
+0%
+0.
+#122500
+0#
+0,
+#125000
+1#
+1,
+b0 A
+b101 J
+b10 K
+0H
+b11 I
+08
+1;
+#127500
+0#
+0,
+#130000
+1#
+1,
+0?
+b10 J
+07
+b0 K
+b1 I
+0:
+1N
+1(
+#132500
+0#
+0,
+#135000
+1#
+1,
+b0 J
+0G
+bx I
+0'
+x;
+x:
+#137500
+0#
+0,
+#140000
+1#
+1,
+#141250
+1"
+1%
+b11000011 &
+1+
+1.
+15
+04
+10
+1/
+b1 K
+1L
+1<
+#142500
+0#
+0,
+#145000
+1#
+1,
+b1 J
+b11 K
+1G
+1H
+b0 I
+1'
+18
+0;
+0:
+0N
+0(
+#147500
+0#
+0,
+#150000
+1#
+1,
+b1 A
+1@
+b11 J
+19
+b10 I
+1:
+1N
+1(
+#152500
+0#
+0,
+#155000
+1#
+1,
+b10 A
+#157500
+0#
+0,
+#160000
+1#
+1,
+b11 A
+0@
+09
+0N
+0(
+#162500
+0#
+0,
+#165000
+1#
+1,
+b100 A
+#167500
+0#
+0,
+#170000
+1#
+1,
+b101 A
+#172500
+0#
+0,
+#175000
+1#
+1,
+b110 A
+#177500
+0#
+0,
+#180000
+1#
+1,
+b111 A
+1@
+19
+1N
+1(
+#182500
+0#
+0,
+#185000
+1#
+1,
+1?
+b1000 A
+17
+b101 K
+#186250
+0%
+0.
+#187500
+0#
+0,
+#190000
+1#
+1,
+b0 A
+b101 J
+b10 K
+0H
+b11 I
+08
+1;
+#192500
+0#
+0,
+#195000
+1#
+1,
+0?
+b10 J
+07
+b0 K
+b1 I
+0:
+#197500
+0#
+0,
+#200000
+1#
+1,
+b0 J
+0G
+bx I
+0'
+x;
+x:
+#202500
+0#
+0,
+#205000
+1#
+1,
+#206250
+0"
+1%
+b1 &
+0+
+1.
+05
+00
+0/
+b1 K
+#207500
+0#
+0,
+#210000
+1#
+1,
+b1 J
+b11 K
+1G
+1H
+b0 I
+1'
+18
+0;
+0:
+0N
+0(
+#212500
+0#
+0,
+#215000
+1#
+1,
+b1 A
+b11 J
+b10 I
+1:
+1N
+1(
+#217500
+0#
+0,
+#220000
+1#
+1,
+b10 A
+0@
+09
+0N
+0(
+#222500
+0#
+0,
+#225000
+1#
+1,
+b11 A
+#227500
+0#
+0,
+#230000
+1#
+1,
+b100 A
+#232500
+0#
+0,
+#235000
+1#
+1,
+b101 A
+#237500
+0#
+0,
+#240000
+1#
+1,
+b110 A
+#242500
+0#
+0,
+#245000
+1#
+1,
+b111 A
+#247500
+0#
+0,
+#250000
+1#
+1,
+1?
+b1000 A
+17
+b101 K
+#252500
+0#
+0,
+#255000
+1#
+1,
+b0 A
+b101 J
+b10 K
+0H
+b11 I
+08
+1;
+1N
+1(
+#257500
+0#
+0,
+#260000
+1#
+1,
+0?
+b10 J
+07
+b1 K
+b1 I
+0:
+#261250
+b11110000 &
+06
+12
+11
+10
+1/
+0L
+0<
+#262500
+0#
+0,
+#265000
+1#
+1,
+b1 J
+b11 K
+1H
+b0 I
+18
+0;
+0N
+0(
+#267500
+0#
+0,
+#270000
+1#
+1,
+b1 A
+b11 J
+b10 I
+1:
+#272500
+0#
+0,
+#275000
+1#
+1,
+b10 A
+#277500
+0#
+0,
+#280000
+1#
+1,
+b11 A
+#282500
+0#
+0,
+#285000
+1#
+1,
+b100 A
+#287500
+0#
+0,
+#290000
+1#
+1,
+b101 A
+1@
+19
+1N
+1(
+#292500
+0#
+0,
+#295000
+1#
+1,
+b110 A
+#297500
+0#
+0,
+#300000
+1#
+1,
+b111 A
+#302500
+0#
+0,
+#305000
+1#
+1,
+1?
+b1000 A
+17
+b101 K
+#307500
+0#
+0,
+#310000
+1#
+1,
+b0 A
+b101 J
+b10 K
+0H
+b11 I
+08
+1;
+0N
+0(
+#312500
+0#
+0,
+#315000
+1#
+1,
+0?
+b10 J
+07
+b1 K
+b1 I
+0:
+1N
+1(
+#317500
+0#
+0,
+#320000
+1#
+1,
+b1 J
+b11 K
+1H
+b0 I
+18
+0;
+0N
+0(
+#322500
+0#
+0,
+#325000
+1#
+1,
+b1 A
+0@
+b11 J
+09
+b10 I
+1:

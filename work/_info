@@ -1,0 +1,140 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/Mohamed Ezzat/Desktop/UART project
+vFSM
+Z1 !s110 1658072002
+!i10b 1
+!s100 QdA6F`6AYG=FUdeEUG62]0
+ICMZTnoCRZ`0=AmDH7XIF90
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1658062928
+8C:/Users/Mohamed Ezzat/Desktop/UART project/FSM.v
+FC:/Users/Mohamed Ezzat/Desktop/UART project/FSM.v
+L0 1
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1658072002.000000
+!s107 C:/Users/Mohamed Ezzat/Desktop/UART project/FSM.v|
+!s90 -reportprogress|300|-work|work|C:/Users/Mohamed Ezzat/Desktop/UART project/FSM.v|
+!i113 1
+Z5 o-work work
+Z6 tCvgOpt 0
+n@f@s@m
+vMUX
+R1
+!i10b 1
+!s100 aLLbCmTm31i3lHT[9iWCk1
+I1]^aMNMzeCQ^9e`7AXAG_1
+R2
+R0
+w1658056510
+8C:/Users/Mohamed Ezzat/Desktop/UART project/MUX.v
+FC:/Users/Mohamed Ezzat/Desktop/UART project/MUX.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/Mohamed Ezzat/Desktop/UART project/MUX.v|
+!s90 -reportprogress|300|-work|work|C:/Users/Mohamed Ezzat/Desktop/UART project/MUX.v|
+!i113 1
+R5
+R6
+n@m@u@x
+vparity_calc
+R1
+!i10b 1
+!s100 ZhPcbz=T>XmdLJ]zFdCRY1
+IchNL1REWUoke<zjjgfA;a1
+R2
+R0
+w1658069592
+8C:/Users/Mohamed Ezzat/Desktop/UART project/parity_calc.v
+FC:/Users/Mohamed Ezzat/Desktop/UART project/parity_calc.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/Mohamed Ezzat/Desktop/UART project/parity_calc.v|
+!s90 -reportprogress|300|-work|work|C:/Users/Mohamed Ezzat/Desktop/UART project/parity_calc.v|
+!i113 1
+R5
+R6
+vserializer
+R1
+!i10b 1
+!s100 4V1dz2@AmUHfk3l`BEhiG1
+InKHl[MBVod^mblaNmARQ82
+R2
+R0
+w1658058844
+8C:/Users/Mohamed Ezzat/Desktop/UART project/serializer.v
+FC:/Users/Mohamed Ezzat/Desktop/UART project/serializer.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/Mohamed Ezzat/Desktop/UART project/serializer.v|
+!s90 -reportprogress|300|-work|work|C:/Users/Mohamed Ezzat/Desktop/UART project/serializer.v|
+!i113 1
+R5
+R6
+vUART_TX
+R1
+!i10b 1
+!s100 7PGC?3z101RFX1?KWoV>L2
+Iem`b1:`15iC2D47UkMm6m2
+R2
+R0
+w1657555435
+8C:/Users/Mohamed Ezzat/Desktop/UART project/UART_TX.v
+FC:/Users/Mohamed Ezzat/Desktop/UART project/UART_TX.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/Mohamed Ezzat/Desktop/UART project/UART_TX.v|
+!s90 -reportprogress|300|-work|work|C:/Users/Mohamed Ezzat/Desktop/UART project/UART_TX.v|
+!i113 1
+R5
+R6
+n@u@a@r@t_@t@x
+vUART_TX_tb
+R1
+!i10b 1
+!s100 H6MeB7H6P<Eid:JL1fkLe2
+IXJjel`O94cWf6__ez23O^0
+R2
+R0
+w1658071981
+8C:/Users/Mohamed Ezzat/Desktop/UART project/UART_TX_tb.v
+FC:/Users/Mohamed Ezzat/Desktop/UART project/UART_TX_tb.v
+L0 2
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/Mohamed Ezzat/Desktop/UART project/UART_TX_tb.v|
+!s90 -reportprogress|300|-work|work|C:/Users/Mohamed Ezzat/Desktop/UART project/UART_TX_tb.v|
+!i113 1
+R5
+R6
+n@u@a@r@t_@t@x_tb

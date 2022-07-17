@@ -1,0 +1,220 @@
+# vsim work.UART_TX_tb 
+# Start time: 17:33:14 on Jul 17,2022
+# Loading work.UART_TX_tb
+# Loading work.UART_TX
+# Loading work.serializer
+# Loading work.FSM
+# Loading work.parity_calc
+# Loading work.MUX
+vlog -reportprogress 300 -work work {C:/Users/Mohamed Ezzat/Desktop/UART project/FSM.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 17:33:22 on Jul 17,2022
+# vlog -reportprogress 300 -work work C:/Users/Mohamed Ezzat/Desktop/UART project/FSM.v 
+# -- Compiling module FSM
+# 
+# Top level modules:
+# 	FSM
+# End time: 17:33:22 on Jul 17,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work {C:/Users/Mohamed Ezzat/Desktop/UART project/MUX.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 17:33:22 on Jul 17,2022
+# vlog -reportprogress 300 -work work C:/Users/Mohamed Ezzat/Desktop/UART project/MUX.v 
+# -- Compiling module MUX
+# 
+# Top level modules:
+# 	MUX
+# End time: 17:33:22 on Jul 17,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work {C:/Users/Mohamed Ezzat/Desktop/UART project/parity_calc.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 17:33:22 on Jul 17,2022
+# vlog -reportprogress 300 -work work C:/Users/Mohamed Ezzat/Desktop/UART project/parity_calc.v 
+# -- Compiling module parity_calc
+# 
+# Top level modules:
+# 	parity_calc
+# End time: 17:33:22 on Jul 17,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work {C:/Users/Mohamed Ezzat/Desktop/UART project/serializer.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 17:33:22 on Jul 17,2022
+# vlog -reportprogress 300 -work work C:/Users/Mohamed Ezzat/Desktop/UART project/serializer.v 
+# -- Compiling module serializer
+# 
+# Top level modules:
+# 	serializer
+# End time: 17:33:22 on Jul 17,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work {C:/Users/Mohamed Ezzat/Desktop/UART project/UART_TX.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 17:33:22 on Jul 17,2022
+# vlog -reportprogress 300 -work work C:/Users/Mohamed Ezzat/Desktop/UART project/UART_TX.v 
+# -- Compiling module UART_TX
+# 
+# Top level modules:
+# 	UART_TX
+# End time: 17:33:22 on Jul 17,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work {C:/Users/Mohamed Ezzat/Desktop/UART project/UART_TX_tb.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 17:33:22 on Jul 17,2022
+# vlog -reportprogress 300 -work work C:/Users/Mohamed Ezzat/Desktop/UART project/UART_TX_tb.v 
+# -- Compiling module UART_TX_tb
+# 
+# Top level modules:
+# 	UART_TX_tb
+# End time: 17:33:22 on Jul 17,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim work.UART_TX_tb
+# End time: 17:33:32 on Jul 17,2022, Elapsed time: 0:00:18
+# Errors: 0, Warnings: 0
+# vsim work.UART_TX_tb 
+# Start time: 17:33:32 on Jul 17,2022
+# Loading work.UART_TX_tb
+# Loading work.UART_TX
+# Loading work.serializer
+# Loading work.FSM
+# Loading work.parity_calc
+# Loading work.MUX
+run -all
+# case 1 without parity
+# **************************************************
+#  test 1 at idle state tx_out = 1
+#  test 1 passed 
+#  test 2 start bit of the frame = 0
+#  test 2 passed 
+#  data = 00001111
+#  test 3 P_Data[0] = 1
+#  test 3 passed 
+#  test 4 P_Data[1] = 1
+#  test 4 passed 
+#  test 5 P_Data[2]= 1
+#  test 5 passed 
+#  test 6 P_Data[3] = 1
+#  test 6 passed 
+#  test 7 P_Data[4] = 0
+#  test 7 passed 
+#  test 8 P_Data[5]= 0
+#  test 8 passed 
+#  test 9 P_Data[6] = 0
+#  test 9 passed 
+#  test 10 P_Data[7] = 0
+#  test 10 passed 
+#  test 11 stop bit of the frame = 1
+#  test 11 passed 
+#  test 12 vaild data=0 tx_out = 1 idle state
+#  test 12 passed 
+# case 2 with even parity 
+# **************************************************
+#  test 1 at idle state tx_out = 1
+#  test 1 passed 
+#  test 2 start bit of the frame = 0
+#  test 2 passed 
+#  data = 00000101
+#  test 3 P_Data[0]= 1
+#  test 3 passed 
+#  test 4 P_Data[1] = 0
+#  test 4 passed 
+#  test 5 P_Data[2] = 1
+#  test 5 passed 
+#  test 6 P_Data[3] = 0
+#  test 6 passed 
+#  test 7 P_Data[4]= 0
+#  test 7 passed 
+#  test 8 P_Data[5] = 0
+#  test 8 passed 
+#  test 9 P_Data[6] = 0
+#  test 9 passed 
+#  test 10 P_Data[7] = 0
+#  test 10 passed 
+#  test 11 parity bit of data = 0
+#  test 11 passed 
+#  test 12 stop bit of the frame = 1
+#  test 12 passed 
+#  test 13 valid data =0  tx_out = 1 idle state
+#  test 13 passed 
+# case 3 with odd parity 
+# **************************************************
+#  test 1 at idle state tx_out = 1
+#  test 1 passed 
+#  test 2 start bit of the frame = 0
+#  test 2 passed 
+#  data = 11000011
+#  test 3 P_Data[0] = 1
+#  test 3 passed 
+#  test 4 P_Data[1] = 1
+#  test 4 passed 
+#  test 5 P_Data[2] = 0
+#  test 5 passed 
+#  test 6 P_Data[3]= 0
+#  test 6 passed 
+#  test 7 P_Data[4] = 0
+#  test 7 passed 
+#  test 8 P_Data[5]= 0
+#  test 8 passed 
+#  test 9 P_Data[6] = 1
+#  test 9 passed 
+#  test 10 P_Data[7] = 1
+#  test 10 passed 
+#  test 11 parity bit of data = 1
+#  test 11 passed 
+#  test 12 stop bit of the frame = 1
+#  test 12 passed 
+#  test 13 valid data =0 tx_out  = 1 idle state
+#  test 13 passed 
+# case 4 2 successive frames
+# **************************************************
+#  test 1 at idle state tx_out= 1
+#  test 1 passed 
+#  test 2 start bit of the frame = 0
+#  test 2 passed 
+#  data = 00000001
+#  test 3 P_Data[0] = 1
+#  test 3 passed 
+#  test 4 P_Data[1] = 1
+#  test 4 passed 
+#  test 5 P_Data[2] = 0
+#  test 5 passed 
+#  test 6 P_Data[3]= 0
+#  test 6 passed 
+#  test 7 P_Data[4] = 0
+#  test 7 passed 
+#  test 8 P_Data[5]= 0
+#  test 8 passed 
+#  test 9 P_Data[6] = 0
+#  test 9 passed 
+#  test 10 P_Data[7] = 0
+#  test 10 passed 
+#  test 11 parity bit of data = 1
+#  test 11 passed 
+#  test 12 stop bit of the frame = 1
+#  test 12 passed 
+#  test 13 vaild data = 1  strat frame
+#  test 13 passed 
+#  test 14  P_Data[0]=0
+#  test 14 passed 
+#  test 15  P_Data[1]=0 
+#  test 15 passed 
+#  test 16 P_Data[2]=0
+#  test 16 passed 
+#  test 17  P_Data[3]=0
+#  test 17 passed 
+#  test 18  P_Data[4]=1
+#  test 18 passed 
+#  test 19  P_Data[5]=1
+#  test 19 passed 
+#  test 20  P_Data[6]=1
+#  test 20 passed 
+#  test 21  P_Data[7]=1
+#  test 21 passed 
+#  test 22  parity bit=0 
+#  test 22 passed 
+#  test 23  stop bit = 1
+#  test 23 passed 
+# ** Note: $finish    : C:/Users/Mohamed Ezzat/Desktop/UART project/UART_TX_tb.v(51)
+#    Time: 326250 ps  Iteration: 0  Instance: /UART_TX_tb
+# 1
+# Break in Module UART_TX_tb at C:/Users/Mohamed Ezzat/Desktop/UART project/UART_TX_tb.v line 51
+# End time: 17:35:12 on Jul 17,2022, Elapsed time: 0:01:40
+# Errors: 0, Warnings: 0
