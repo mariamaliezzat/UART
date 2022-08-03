@@ -1,0 +1,199 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/Mohamed Ezzat/Desktop/UART project/UART RX
+vData_Sampling
+Z1 !s110 1659443917
+!i10b 1
+!s100 MXVGc[:VZK;j`5CnGHJFC0
+IWQM@:o@?mEMGiU@4zSlAA2
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1659373337
+8Data_Sampling.v
+FData_Sampling.v
+L0 1
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1659443917.000000
+Z5 !s107 UART_RX_tb.v|UART_RX.v|Stop_Check.v|Start_Check.v|Parity_Check.v|FSM.v|Edge_Bit_Counter.V|Deserializer.v|Data_Sampling.v|
+Z6 !s90 Data_Sampling.v|Deserializer.v|Edge_Bit_Counter.V|FSM.v|Parity_Check.v|Start_Check.v|Stop_Check.v|UART_RX.v|UART_RX_tb.v|
+!i113 1
+Z7 tCvgOpt 0
+n@data_@sampling
+vDeserializer
+R1
+!i10b 1
+!s100 lA0JF3IJTYC;Y=NB288:02
+I9]YHG8VQO003m9I3kiKaj3
+R2
+R0
+w1659369926
+8Deserializer.v
+FDeserializer.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+R5
+R6
+!i113 1
+R7
+n@deserializer
+vEdge_Bit_Counter
+R1
+!i10b 1
+!s100 FTbN68Y7hFe0Pe2TT?KLG2
+IKeE^[3TaEA3>Ni@ENkRDg2
+R2
+R0
+w1659379638
+8Edge_Bit_Counter.V
+FEdge_Bit_Counter.V
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+R5
+R6
+!i113 1
+R7
+n@edge_@bit_@counter
+vFSM
+R1
+!i10b 1
+!s100 WPUmW=AZ:Ta41Yg8jNCoL2
+I5]nCgWe4WN64EjBlN1UH01
+R2
+R0
+w1659378874
+8FSM.v
+FFSM.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+R5
+R6
+!i113 1
+R7
+n@f@s@m
+vParity_Check
+Z8 !s110 1659443918
+!i10b 1
+!s100 =jUH_Pm>_aY^=6]Uh:aDj0
+IQ6mgej<CFR:hPLjT1EOS>1
+R2
+R0
+w1659380777
+8Parity_Check.v
+FParity_Check.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+R5
+R6
+!i113 1
+R7
+n@parity_@check
+vStart_Check
+R8
+!i10b 1
+!s100 28PHz`CUL[f:BZCW0ESgO1
+IVE8A;DG@E^XmIeBAB9LP52
+R2
+R0
+w1659375441
+8Start_Check.v
+FStart_Check.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+R5
+R6
+!i113 1
+R7
+n@start_@check
+vStop_Check
+R8
+!i10b 1
+!s100 B]0cfDhXLmWC;RWmX1PO31
+IWE^Rl_]ZmhIFf9X:gnLhK1
+R2
+R0
+w1659034163
+8Stop_Check.v
+FStop_Check.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+R5
+R6
+!i113 1
+R7
+n@stop_@check
+vUART_RX
+R8
+!i10b 1
+!s100 _n2cPVJn0nTY=Jgi7fg@f2
+IVlVE^loOZRe<m>5mz0hYo3
+R2
+R0
+w1659373728
+8UART_RX.v
+FUART_RX.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+R5
+R6
+!i113 1
+R7
+n@u@a@r@t_@r@x
+vUART_RX_tb
+R8
+!i10b 1
+!s100 NYT4XfSF5jTHC6V[2f98<0
+I>NcmA6cQ6k`VEDHb1iV2j3
+R2
+R0
+w1659386908
+8UART_RX_tb.v
+FUART_RX_tb.v
+L0 2
+R3
+r1
+!s85 0
+31
+R4
+R5
+R6
+!i113 1
+R7
+n@u@a@r@t_@r@x_tb

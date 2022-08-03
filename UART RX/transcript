@@ -1,0 +1,349 @@
+# ERROR: No extended dataflow license exists
+# vsim work.UART_RX 
+# Start time: 20:51:03 on Aug 01,2022
+# Loading work.UART_RX
+# Loading work.FSM
+# Loading work.Parity_Check
+# Loading work.Start_Check
+# Loading work.Stop_Check
+# Loading work.Edge_Bit_Counter
+# Loading work.Deserializer
+# Loading work.Data_Sampling
+vlog -reportprogress 300 -work work {C:/Users/Mohamed Ezzat/Desktop/UART project/UART RX/Data_Sampling.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:51:27 on Aug 01,2022
+# vlog -reportprogress 300 -work work C:/Users/Mohamed Ezzat/Desktop/UART project/UART RX/Data_Sampling.v 
+# -- Compiling module Data_Sampling
+# 
+# Top level modules:
+# 	Data_Sampling
+# End time: 20:51:27 on Aug 01,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work {C:/Users/Mohamed Ezzat/Desktop/UART project/UART RX/Deserializer.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:51:27 on Aug 01,2022
+# vlog -reportprogress 300 -work work C:/Users/Mohamed Ezzat/Desktop/UART project/UART RX/Deserializer.v 
+# -- Compiling module Deserializer
+# 
+# Top level modules:
+# 	Deserializer
+# End time: 20:51:27 on Aug 01,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work {C:/Users/Mohamed Ezzat/Desktop/UART project/UART RX/Edge_Bit_Counter.V}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:51:27 on Aug 01,2022
+# vlog -reportprogress 300 -work work C:/Users/Mohamed Ezzat/Desktop/UART project/UART RX/Edge_Bit_Counter.V 
+# -- Compiling module Edge_Bit_Counter
+# 
+# Top level modules:
+# 	Edge_Bit_Counter
+# End time: 20:51:27 on Aug 01,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work {C:/Users/Mohamed Ezzat/Desktop/UART project/UART RX/FSM.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:51:27 on Aug 01,2022
+# vlog -reportprogress 300 -work work C:/Users/Mohamed Ezzat/Desktop/UART project/UART RX/FSM.v 
+# -- Compiling module FSM
+# 
+# Top level modules:
+# 	FSM
+# End time: 20:51:27 on Aug 01,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work {C:/Users/Mohamed Ezzat/Desktop/UART project/UART RX/Parity_Check.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:51:27 on Aug 01,2022
+# vlog -reportprogress 300 -work work C:/Users/Mohamed Ezzat/Desktop/UART project/UART RX/Parity_Check.v 
+# -- Compiling module Parity_Check
+# 
+# Top level modules:
+# 	Parity_Check
+# End time: 20:51:27 on Aug 01,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work {C:/Users/Mohamed Ezzat/Desktop/UART project/UART RX/Start_Check.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:51:27 on Aug 01,2022
+# vlog -reportprogress 300 -work work C:/Users/Mohamed Ezzat/Desktop/UART project/UART RX/Start_Check.v 
+# -- Compiling module Start_Check
+# 
+# Top level modules:
+# 	Start_Check
+# End time: 20:51:27 on Aug 01,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work {C:/Users/Mohamed Ezzat/Desktop/UART project/UART RX/Stop_Check.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:51:27 on Aug 01,2022
+# vlog -reportprogress 300 -work work C:/Users/Mohamed Ezzat/Desktop/UART project/UART RX/Stop_Check.v 
+# -- Compiling module Stop_Check
+# 
+# Top level modules:
+# 	Stop_Check
+# End time: 20:51:27 on Aug 01,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work {C:/Users/Mohamed Ezzat/Desktop/UART project/UART RX/UART_RX.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:51:27 on Aug 01,2022
+# vlog -reportprogress 300 -work work C:/Users/Mohamed Ezzat/Desktop/UART project/UART RX/UART_RX.v 
+# -- Compiling module UART_RX
+# 
+# Top level modules:
+# 	UART_RX
+# End time: 20:51:27 on Aug 01,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work {C:/Users/Mohamed Ezzat/Desktop/UART project/UART RX/UART_RX_tb.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:51:27 on Aug 01,2022
+# vlog -reportprogress 300 -work work C:/Users/Mohamed Ezzat/Desktop/UART project/UART RX/UART_RX_tb.v 
+# -- Compiling module UART_RX_tb
+# 
+# Top level modules:
+# 	UART_RX_tb
+# End time: 20:51:27 on Aug 01,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim work.UART_RX
+# End time: 20:52:35 on Aug 01,2022, Elapsed time: 0:01:32
+# Errors: 0, Warnings: 0
+# vsim work.UART_RX 
+# Start time: 20:52:35 on Aug 01,2022
+# Loading work.UART_RX
+# Loading work.FSM
+# Loading work.Parity_Check
+# Loading work.Start_Check
+# Loading work.Stop_Check
+# Loading work.Edge_Bit_Counter
+# Loading work.Deserializer
+# Loading work.Data_Sampling
+# WARNING: No extended dataflow license exists
+add wave -position insertpoint  \
+sim:/UART_RX/clk \
+sim:/UART_RX/rst \
+sim:/UART_RX/PAR_TYP \
+sim:/UART_RX/PAR_EN \
+sim:/UART_RX/Prescale \
+sim:/UART_RX/RX_IN \
+sim:/UART_RX/P_Data \
+sim:/UART_RX/Data_valid \
+sim:/UART_RX/edge_counter1 \
+sim:/UART_RX/bit_counter1 \
+sim:/UART_RX/partiy_error1 \
+sim:/UART_RX/stop_error1 \
+sim:/UART_RX/strat_glitch1 \
+sim:/UART_RX/data_sample_enable1 \
+sim:/UART_RX/enable1 \
+sim:/UART_RX/deserializer_enable1 \
+sim:/UART_RX/stop_check_enable1 \
+sim:/UART_RX/start_check_enable1 \
+sim:/UART_RX/parity_check_enable1 \
+sim:/UART_RX/sampled_bit1
+force -freeze sim:/UART_RX/clk 1 0, 0 {50 ps} -r 100
+force -freeze sim:/UART_RX/rst 0 0
+force -freeze sim:/UART_RX/PAR_EN 0 0
+force -freeze sim:/UART_RX/Prescale 01000 0
+force -freeze sim:/UART_RX/RX_IN 1 0
+run
+run
+run
+force -freeze sim:/UART_RX/rst 1 0
+force -freeze sim:/UART_RX/RX_IN 0 0
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+force -freeze sim:/UART_RX/RX_IN 0 0
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+force -freeze sim:/UART_RX/RX_IN 1 0
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+force -freeze sim:/UART_RX/RX_IN 0 0
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+force -freeze sim:/UART_RX/PAR_EN 1 0
+force -freeze sim:/UART_RX/PAR_TYP 0 0
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+force -freeze sim:/UART_RX/RX_IN 1 0
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+force -freeze sim:/UART_RX/RX_IN 0 0
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+# End time: 21:35:34 on Aug 01,2022, Elapsed time: 0:42:59
+# Errors: 0, Warnings: 1
